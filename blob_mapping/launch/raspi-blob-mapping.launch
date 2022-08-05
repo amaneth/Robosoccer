@@ -1,0 +1,6 @@
+<launch>
+   <rosparam command="load" file="$(find blob_mapping)/config/raspi-camera.yaml" />
+   <rosparam command="load" file="$(find robot_localization)/config/laboratory-map.yaml" />
+   <node name="blob_mapping" pkg="blob_mapping" type="mapper.py" output="screen"/>
+   <node name ="blob_mapping" pkg="blob_mapping" type="Detector_Mapper.py" />
+</launch>

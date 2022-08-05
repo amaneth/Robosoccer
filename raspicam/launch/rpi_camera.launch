@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="raspicam" name="raspicam_node" type="raspicam_raw_node" output="screen"
+    	args="_width:=1280 _height:=720 _framerate:=2">
+    <!-- remap from="set_camera_info" to="camera/set_camera_info"/ -->
+    <!-- Raspicam parameters 1280x720 at 2Hz -->
+    </node>
+</launch>

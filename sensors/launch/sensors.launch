@@ -1,0 +1,3 @@
+<launch>
+	<node pkg= "sensors" name = "compass" type = "compass.py"/>
+</launch>

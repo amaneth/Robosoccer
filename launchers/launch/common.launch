@@ -1,0 +1,27 @@
+<!-- Common launch file for Robocup Robots. Should not be used directly, but called via master/slave.launch -->
+
+<!-- TODO: Fetch publishing prefix from args and namespace the whole thing according to robot name -->
+<launch>
+  <group ns="$(env ROBOT_NAME)">
+    <!-- Launch Raspberry Pi Camera Node -->
+    <include file="$(find raspicam)/launch/rpi_camera.launch" />
+    <!-- Launch Blob Detection Node -->
+    <include file="$(find blob_detector)/launch/ball.launch" />
+    
+    
+    <node name="start_capture" pkg="launchers" type="start_camera.py" />
+
+   
+    <!-- Launch blob_mapping node -->
+    <include file="$(find blob_mapping)/launch/raspi-blob-mapping.launch" />
+
+    <!-- Launch Compass publisher node -->
+    <include file="$(find sensors)/launch/sensors.launch" />
+
+  
+    <!-- Launch body driver node -->
+    <include file="$(find body_driver)/launch/body_driver.launch" />
+  
+  </group>
+<env name="ROBOT_NAME" value="aman" />
+</launch>

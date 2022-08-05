@@ -1,0 +1,4 @@
+<launch>
+  <!-- include common file -->
+  <include file="$(find launchers)/launch/common.launch" />
+</launch>

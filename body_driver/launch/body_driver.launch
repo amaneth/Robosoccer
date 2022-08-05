@@ -1,0 +1,4 @@
+<launch>
+    <rosparam command="load" file="$(find body_driver)/config/ir_codes.yaml" />
+    <node pkg="body_driver" name="robot_command" type="body_driver.py" />
+</launch>

@@ -1,0 +1,4 @@
+camera_mapping:
+    fov_horizontal: 160     #approx measured from abebe
+    fov_vertical: 90       
+    distortion_coeff: 2.5 

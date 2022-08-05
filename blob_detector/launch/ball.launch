@@ -1,0 +1,4 @@
+<launch>
+    <rosparam command="load" file="$(find robot_localization)/config/laboratory-map.yaml" />
+    <node pkg="blob_detector" name="blob_detector" type="detect_blobs.py" output="screen"/>
+</launch>

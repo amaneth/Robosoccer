@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find launchers)/launch/common.launch" />
+  <!-- TODO: specify if home or visitor -->
+  <node name="master" pkg="master_coordinator" type="master.py" />
+</launch>
