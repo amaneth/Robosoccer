@@ -1,6 +1,8 @@
 # Robosoccer
 This code is a modification from [https://github.com/elggem/soccercode.git](https://github.com/elggem/soccercode.git). It is all about playing Robosapien robots a soccer. The code is written to be run on a Raspberry pi. The field of the game is shown in the following picture. To score a goal the robot has to dribble the ball and hit the marker of the goal. This has done in five modules. These five modules are picamera, blob detector, blob mapping, sensor, and body driver. Each of these modules have a ROS node and the commucation between them is done through publishing and subscribing to the topics of these nodes. 
-<img src="images/img03.png" alt="drawing" width="400"/> <img src="images/img01.jpg" alt="drawing" width="400"/>
+
+
+<img src="images/img03.png" alt="drawing" width="400"/> <img src="images/img01.png" alt="drawing" width="400"/>
 ![caption](images/img02.png)
 ## Outline
 
