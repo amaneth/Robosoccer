@@ -18,12 +18,12 @@ This code is a modification from [https://github.com/elggem/soccercode.git](http
     - it also tries to find markers by checking pairs of colors
     - observed markers are compiled together and published for robot_localization.
   - [X] Sensor 
-    - this is where the oriention of the the robots is detected.
+    - this is where the orientation of the the robots is detected.
     - publishes to the body_driver topic
           
   - [X] Body driver
     - It where the acutal action of the robot is done.
-    - It subsribes to the blob_detector and blob_mapping.
+    - subscribes to the blob_detector and blob_mapping.
 ## Dependencies
 - python2.7
 - rospy
